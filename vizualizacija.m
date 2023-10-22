@@ -30,7 +30,7 @@ plot(kroznica_x, kroznica_y, 'k');
 % Nastavitve grafa
 axis equal; % Ohranimo razmerje enakih razdalj na obeh oseh
 % Odstranimo ime grafa (naslov)
-title('');
+title('Raztros točk');
 
 
 % Izpišemo povprečje približka za π
