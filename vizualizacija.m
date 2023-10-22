@@ -25,6 +25,9 @@ scatter(x_kvadrat(razdalja_kvadrat > radij^2), y_kvadrat(razdalja_kvadrat > radi
 theta = 0:0.01:2*pi;
 kroznica_x = radij * cos(theta);
 kroznica_y = radij * sin(theta);
+xlabel('X');
+ylabel('Y');
+legend('Znotraj', 'Zunaj', 'Krožnica');
 plot(kroznica_x, kroznica_y, 'k');
 
 % Nastavitve grafa
