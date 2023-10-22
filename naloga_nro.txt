@@ -1,0 +1,91 @@
+\documentclass{beamer}
+\usetheme{default}
+
+\title{Predstavitev Naloge}
+\author{Matej Boštjančič}
+\institute{Fakulteta za strojnišvo
+Univerza v Ljubljani}
+\date{\today}
+
+\begin{document}
+\setbeamertemplate{footline}{%
+  \hfill\insertframenumber/\inserttotalframenumber\hspace{1em}
+}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kazalo}
+    \tableofcontents
+\end{frame}
+
+\logo{\includegraphics[height=1cm]{UL-logo_center-RGB-barven-pozitiv.jpg}}
+
+\section{Uvod}
+\begin{frame}
+    \frametitle{Uvod}
+    \begin{itemize}
+        \item Pregled naloge: Pri tej nalogi smo se lotili izračuna približka števila $\pi$.
+        \item Motivacija: Zanimivo je, da lahko s to metodo sami izračunamo približek konstant kot so $\pi$, ali e, če le poznamo njihovo definicijo.
+      
+\end{itemize}
+
+\end{frame}
+
+\section{Metodologija}
+\begin{frame}
+    \frametitle{Metodologija}
+    \begin{itemize}
+        \item Opis uporabljenih metod: Za izračun približka števila  $\pi$ smo uporabili metodo Monte Carlo. V kvadratu dimenzij 1x1 smo generirali naključne točke, za katere smo nato preverili ali ležijo znotraj krožnice z radijem 1.
+
+        
+        
+    \end{itemize}
+\end{frame}
+\begin{frame}{‎}
+    \begin{itemize}
+        \item Koraki izvajanja naloge: najprej smo napisali program, ki generira naključne točke v danem kvadratu ter preveri ali so znotraj kroga ali ne, ter izračunali približek števila $\pi$ z metodo Monte Carlo. Izračunali smo tudi našo napako tako, da smo izračunano vrednost primerjali z v Matlab ugrajeno numerično vrednost števila $\pi$.  V drugem delu smo se naučili uporabljati funkcijske datoteke, v tretjem programske datoteke, nato pa še anonimne funkcije. Na koncu smo vse nakjlučno generirane točke ter krožnico še predstavili vizualno v grafu.
+     \end{itemize}
+\end{frame}
+\section{Rezultati}
+\begin{frame}
+    \frametitle{Rezultati}
+    \begin{itemize}
+        \item Prikaz rezultatov eksperimentov: \\Povprečna vrednost $\pi$: 3.104
+\\Napaka: 0.037593
+        \pause
+        \item Analiza podatkov:\\
+        dobili smo srednje dober približek števila $\pi$. Tega bi lahko izboljšali, če bi generirali več točk, a bi to podaljšalo tudi čas izračuna.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{‎}
+    \frametitle{Graf točk}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.6\linewidth]{graf.png}
+        \pause
+        \caption{točke in krožnica. rdeči krogci: znotraj, modri križci: zunaj}
+    \end{figure}
+\end{frame}
+
+\section{Zaključek}
+\begin{frame}
+    \frametitle{Zaključek}
+    \begin{itemize}
+        \item Povzetek naloge: v tej nalogi sem se naučil bolje uporabljati Matlab, Git in Latexovo okolje beamer.
+        \pause
+        \item Dosežki in zaključne misli
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \Huge \textbf{HVALA ZA POHORNOST!}
+  \end{center}
+\end{frame}
+
+
+\end{document}
