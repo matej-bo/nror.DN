@@ -1,0 +1,328 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13198,        320]
+NotebookOptionsPosition[     12139,        292]
+NotebookOutlinePosition[     12546,        308]
+CellTagsIndexPosition[     12503,        305]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "Get", "[", 
+   "\"\<C:\\\\Users\\\\matbos\\\\Documents\\\\\[SHacek]ola\\\\3. \
+letnik\\\\nror\\\\MonteCarloPiMethod.m\>\"", "]"}], "\n", "\n"}]], "Input",
+ CellChangeTimes->{{3.908795971108759*^9, 3.908795985051058*^9}, {
+   3.9087960188667316`*^9, 3.9087961059225454`*^9}, {3.9087961509341755`*^9, 
+   3.908796171679685*^9}, 3.9087962535192738`*^9, 3.9087962859688177`*^9},
+ CellLabel->"In[4]:=",ExpressionUUID->"c75e8cf3-6d06-4c23-9464-e30390a06527"],
+
+Cell[BoxData[
+ RowBox[{"Notebook", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Cell", "[", 
+     RowBox[{
+      RowBox[{"BoxData", "[", 
+       RowBox[{"RowBox", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"RowBox", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"RowBox", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"RowBox", "[", 
+                 RowBox[{"{", 
+                  
+                  RowBox[{"\<\"monteCarloPi\"\>", ",", "\<\"[\"\>", 
+                   ",", "\<\"n_\"\>", ",", "\<\"]\"\>"}], "}"}], "]"}], 
+                ",", "\<\":=\"\>", ",", 
+                RowBox[{"RowBox", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"\<\"Module\"\>", ",", "\<\"[\"\>", ",", 
+                   RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"{\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    
+                    RowBox[{"\<\"pointsInsideCircle\"\>", ",", "\<\",\"\>", 
+                    ",", "\<\"totalPoints\"\>", ",", "\<\",\"\>", 
+                    ",", "\<\"approxPi\"\>"}], "}"}], "]"}], 
+                    ",", "\<\"}\"\>"}], "}"}], "]"}], ",", "\<\",\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    
+                    RowBox[{"\<\"pointsInsideCircle\"\>", ",", "\<\"=\"\>", 
+                    ",", "\<\"0\"\>"}], "}"}], "]"}], ",", "\<\";\"\>", 
+                    ",", "\<\"\[IndentingNewLine]\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    
+                    RowBox[{"\<\"totalPoints\"\>", ",", "\<\"=\"\>", 
+                    ",", "\<\"0\"\>"}], "}"}], "]"}], ",", "\<\";\"\>", 
+                    ",", "\<\"\[IndentingNewLine]\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"Do\"\>", ",", "\<\"[\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"{\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"x\"\>", ",", "\<\",\"\>", ",", "\<\"y\"\>"}],
+                     "}"}], "]"}], ",", "\<\"}\"\>"}], "}"}], "]"}], 
+                    ",", "\<\"=\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"RandomReal\"\>", ",", "\<\"[\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"{\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"-\"\>", ",", "\<\"1\"\>"}], "}"}], "]"}], 
+                    ",", "\<\",\"\>", ",", "\<\"1\"\>"}], "}"}], "]"}], 
+                    ",", "\<\"}\"\>"}], "}"}], "]"}], ",", "\<\",\"\>", 
+                    ",", "\<\"2\"\>"}], "}"}], "]"}], ",", "\<\"]\"\>"}], 
+                    "}"}], "]"}]}], "}"}], "]"}], ",", "\<\";\"\>", 
+                    ",", "\<\"\[IndentingNewLine]\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"If\"\>", ",", "\<\"[\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"x\"\>", ",", "\<\"^\"\>", ",", "\<\"2\"\>"}],
+                     "}"}], "]"}], ",", "\<\"+\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"y\"\>", ",", "\<\"^\"\>", ",", "\<\"2\"\>"}],
+                     "}"}], "]"}]}], "}"}], "]"}], ",", "\<\"<=\"\>", 
+                    ",", "\<\"1\"\>"}], "}"}], "]"}], ",", "\<\",\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"pointsInsideCircle\"\>", ",", "\<\"++\"\>"}],
+                     "}"}], "]"}]}], "}"}], "]"}], ",", "\<\"]\"\>"}], "}"}], 
+                    "]"}], ",", "\<\";\"\>", 
+                    ",", "\<\"\[IndentingNewLine]\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"totalPoints\"\>", ",", "\<\"++\"\>"}], "}"}],
+                     "]"}], ",", "\<\";\"\>"}], "}"}], "]"}], 
+                    ",", "\<\",\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"{\"\>", ",", "\<\"n\"\>", ",", "\<\"}\"\>"}],
+                     "}"}], "]"}]}], "}"}], "]"}], ",", "\<\"]\"\>"}], "}"}], 
+                    "]"}], ",", "\<\";\"\>", 
+                    ",", "\<\"\[IndentingNewLine]\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"approxPi\"\>", ",", "\<\"=\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"4\"\>", ",", "\<\"*\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    
+                    RowBox[{"\<\"pointsInsideCircle\"\>", ",", "\<\"/\"\>", 
+                    ",", "\<\"totalPoints\"\>"}], "}"}], "]"}]}], "}"}], 
+                    "]"}]}], "}"}], "]"}], ",", "\<\";\"\>", 
+                    ",", "\<\"\[IndentingNewLine]\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"Print\"\>", ",", "\<\"[\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    
+                    RowBox[{"\<\"\\\"Approximation of Pi using Monte Carlo \
+method: \\\"\"\>", ",", "\<\",\"\>", ",", "\<\"approxPi\"\>"}], "}"}], "]"}], 
+                    ",", "\<\"]\"\>"}], "}"}], "]"}], ",", "\<\";\"\>", 
+                    ",", "\<\"\[IndentingNewLine]\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"Print\"\>", ",", "\<\"[\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"\\\"Error: \\\"\"\>", ",", "\<\",\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"Abs\"\>", ",", "\<\"[\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    
+                    RowBox[{"\<\"Pi\"\>", ",", "\<\"-\"\>", 
+                    ",", "\<\"approxPi\"\>"}], "}"}], "]"}], 
+                    ",", "\<\"]\"\>"}], "}"}], "]"}]}], "}"}], "]"}], 
+                    ",", "\<\"]\"\>"}], "}"}], "]"}], ",", "\<\";\"\>"}], 
+                    "}"}], "]"}]}], "}"}], "]"}], ",", "\<\"]\"\>"}], "}"}], 
+                 "]"}]}], "}"}], "]"}], ",", "\<\";\"\>"}], "}"}], "]"}], 
+          ",", "\<\"\\n\"\>"}], "}"}], "]"}], "]"}], ",", "\<\"Input\"\>", 
+      ",", 
+      RowBox[{"CellChangeTimes", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{"3.908795840702957`*^9", ",", "3.908795840703957`*^9"}], 
+         "}"}], "}"}]}], ",", 
+      RowBox[{"CellLabel", "\[Rule]", "\<\"In[1]:=\"\>"}], ",", 
+      RowBox[{
+      "ExpressionUUID", 
+       "\[Rule]", "\<\"70896f72-840a-48a5-9822-d01d3b4b9bc3\"\>"}]}], "]"}], 
+    "}"}], ",", 
+   RowBox[{"WindowSize", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"958.5`", ",", "735"}], "}"}]}], ",", 
+   RowBox[{"WindowMargins", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1445.25`"}], ",", "Automatic"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Automatic", ",", 
+        RowBox[{"-", "33.75`"}]}], "}"}]}], "}"}]}], ",", 
+   RowBox[{
+   "FrontEndVersion", 
+    "\[Rule]", "\<\"13.3 for Microsoft Windows (64-bit) (June 3, 2023)\"\>"}],
+    ",", 
+   RowBox[{"StyleDefinitions", "\[Rule]", "\<\"Default.nb\"\>"}], ",", 
+   RowBox[{
+   "ExpressionUUID", 
+    "\[Rule]", "\<\"fedaac52-5a8c-4991-9074-6bdb1b4480ef\"\>"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.9087962565941734`*^9, 3.9087962887553215`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"463a6f6d-d407-4d89-9f16-4da8c7055330"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"N", "[", 
+   RowBox[{"monteCarloPi", "[", "1000000", "]"}], "]"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.9087962999533577`*^9, 3.908796318209154*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"0f184812-40a6-408e-8a6b-733f32250851"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Approximation of Pi using Monte Carlo method: \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["196461", "62500"]}],
+  SequenceForm["Approximation of Pi using Monte Carlo method: ", 
+   Rational[196461, 62500]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.908796302942533*^9, 3.9087963207011175`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[6]:=",ExpressionUUID->"ed889e63-7ba8-48ba-a351-4e286bd40edf"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Error: \"\>", "\[InvisibleSpace]", 
+   RowBox[{
+    FractionBox["196461", "62500"], "-", "\[Pi]"}]}],
+  SequenceForm["Error: ", Rational[196461, 62500] - Pi],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.908796302942533*^9, 3.908796320706235*^9}},
+ CellLabel->
+  "During evaluation of \
+In[6]:=",ExpressionUUID->"405aca72-b496-46af-a873-36e6b8f97d00"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.9087963281233473`*^9, 3.9087963350991445`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"bb9f2fad-1641-48f2-9395-5f8a7d58ef9b"],
+
+Cell[BoxData["3.143376`"], "Output",
+ CellChangeTimes->{3.9087963357537766`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"242b80fe-403b-4ae5-add1-185999a807c9"]
+}, Open  ]]
+},
+WindowSize->{958.5, 733.5},
+WindowMargins->{{-1494, Automatic}, {Automatic, 29.25}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6b7dac62-ec39-40fa-a8e5-1871491ad795"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 490, 9, 67, "Input",ExpressionUUID->"c75e8cf3-6d06-4c23-9464-e30390a06527"],
+Cell[1073, 33, 9440, 206, 385, "Output",ExpressionUUID->"463a6f6d-d407-4d89-9f16-4da8c7055330"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10550, 244, 265, 5, 48, "Input",ExpressionUUID->"0f184812-40a6-408e-8a6b-733f32250851"],
+Cell[CellGroupData[{
+Cell[10840, 253, 461, 11, 38, "Print",ExpressionUUID->"ed889e63-7ba8-48ba-a351-4e286bd40edf"],
+Cell[11304, 266, 407, 10, 38, "Print",ExpressionUUID->"405aca72-b496-46af-a873-36e6b8f97d00"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11760, 282, 202, 3, 28, "Input",ExpressionUUID->"bb9f2fad-1641-48f2-9395-5f8a7d58ef9b"],
+Cell[11965, 287, 158, 2, 55, "Output",ExpressionUUID->"242b80fe-403b-4ae5-add1-185999a807c9"]
+}, Open  ]]
+}
+]
+*)
+
